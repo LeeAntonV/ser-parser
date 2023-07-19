@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Parsing phones</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="navbar-inner">
+        <div class="navbar-inner-logo">LOGO</div>
+        <a href="/">
+          <button class="navbar-inner-content">
+            <h2>Перейти Домой</h2>
+            <img src="./public/images/arrow.png" alt="arrow" />
+          </button>
+        </a>
+      </div>
+    </header>
+
+    <div class="create-order">
+      <div class="create-order__item-wrapper">
+        <div class="create-order__content-top" id="drop-zone">
+          <img
+            id="upload-image"
+            src="./public/images/upload.png"
+            alt="Upload"
+          />
+          <input
+            id="file-input"
+            type="file"
+            style="display: none"
+            accept=".xlsx"
+          />
+          <li id="upload-text">загрузите .xlsx файл</li>
+          <p id="status-text"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="load">
+      <h1 class="load-title">Сначало загрузите файл</h1>
+      <h1 class="load-process">Подождите, идет обработка...</h1>
+      <div class="load-success">
+        <h1>Файл успешно обработан!</h1>
+        <a href="#" id="download-link" class="load-success-button">
+          <h2>Скачать файл</h2>
+          <img src="./public/images/download.png" alt="download" />
+        </a>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p class="footer-content-text">
+          © 2016-2023 Веб студия GLONIN.KZ Разработка и создание сайтов Атырау,
+          Алматы
+        </p>
+        <div class="footer-content-icons">
+          <a href="#"
+            ><img src="./public/images/social/img1.svg" alt="social1"
+          /></a>
+          <a href="#"
+            ><img src="./public/images/social/img2.svg" alt="social2"
+          /></a>
+          <a href="#"
+            ><img src="./public/images/social/img3.svg" alt="social3"
+          /></a>
+          <a href="#"
+            ><img src="./public/images/social/img4.svg" alt="social4"
+          /></a>
+          <a href="#"
+            ><img src="./public/images/social/img5.svg" alt="social5"
+          /></a>
+        </div>
+        <div class="footer-content-logo">LOGO</div>
+      </div>
+    </footer>
+  </body>
+  <script type="module" src="./scripts/fileSend.js"></script>
+  <script type="module" src="./scripts/upload.js"></script>
+</html>
